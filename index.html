@@ -11,7 +11,12 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Boss</title>
+    
+    <title>Math Boss | Interactive Math Flashcards for Kids</title>
+    <meta name="description" content="Master multiplication, addition, subtraction, and division with Math Boss. Free interactive flashcards with fun rewards, emoji prizes, and mistake tracking for students.">
+    <meta name="keywords" content="math boss, math flashcards, multiplication practice, math games for kids, free math tools, online flashcards, 3rd grade math, 4th grade math">
+    <link rel="canonical" href="https://mathbossflashcards.com/" />
+
     <style>
         :root { --primary: #6c5ce7; --secondary: #a29bfe; --success: #00b894; --error: #ff7675; --bg: #f8f9fd; --pink: #fd79a8; }
         body { font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif; background: var(--bg); display: flex; flex-direction: column; align-items: center; margin: 0; padding: 10px; min-height: 100vh; overflow-x: hidden; }
@@ -20,7 +25,6 @@
         h1 { color: var(--primary); margin-bottom: 5px; }
         
         .mistake-log-icon { position: absolute; top: 0; right: 0; font-size: 28px; filter: grayscale(100%); opacity: 0.4; cursor: pointer; transition: 0.3s; }
-        .mistake-log-icon:hover { opacity: 1; }
 
         .stats-bar { display: flex; align-items: center; justify-content: center; gap: 15px; font-size: 24px; color: var(--primary); font-weight: bold; margin: 10px 0; background: white; padding: 10px 25px; border-radius: 50px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); min-width: 80%; }
         .trophy-collection { display: flex; gap: 5px; margin-left: 10px; border-left: 2px solid #eee; padding-left: 15px; }
@@ -32,8 +36,6 @@
         
         .table-selector-box { background: #fff; padding: 15px; border-radius: 15px; margin-bottom: 10px; display: none; border: 2px dashed var(--secondary); }
         .table-selector-box.visible { display: block; }
-        
-        /* Table selector input capped at 3 digits width-wise */
         input { width: 70px; padding: 8px; font-size: 20px; text-align: center; border-radius: 8px; border: 2px solid var(--secondary); }
 
         .mode-selector { display: flex; justify-content: center; gap: 8px; margin-bottom: 15px; }
@@ -55,6 +57,11 @@
         .option-btn.correct { background: var(--success) !important; color: white; border-color: #55efc4; box-shadow: 0 4px 0px #00b894; }
         .option-btn.wrong { background: var(--error) !important; color: white; border-color: #fab1a0; box-shadow: 0 4px 0px #d63031; }
         
+        /* SEO Content Styles */
+        .seo-section { max-width: 800px; width: 100%; margin: 50px auto; padding: 20px; text-align: left; color: #444; line-height: 1.6; border-top: 1px solid #ddd; }
+        .seo-section h2 { color: var(--primary); margin-top: 30px; }
+        .seo-section p { margin-bottom: 15px; }
+
         #mistakePage { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--bg); z-index: 3000; overflow-y: auto; }
         .mistake-container { max-width: 450px; margin: 0 auto; padding: 20px; display: flex; flex-direction: column; min-height: 100vh; }
         .mistake-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
@@ -110,6 +117,28 @@
     </div>
 
     <div class="options-grid" id="options"></div>
+</div>
+
+<div class="seo-section">
+    <h2>Master Math Facts with Math Boss Flashcards</h2>
+    <p>Welcome to <strong>Math Boss</strong>, the ultimate tool for students to master mental math. Our interactive math flashcards are designed to help children build fluency in multiplication, addition, subtraction, and division through a fun and gamified experience. Whether you are a 3rd grader learning multiplication tables or an older student perfecting division, Math Boss scales with your skills.</p>
+    
+    <h3>Why Use Interactive Math Flashcards?</h3>
+    <p>Mental math is a fundamental skill for academic success. Research shows that gamified learning increases student engagement and retention. Math Boss uses a unique reward system where students earn emoji prizes—like ice cream, bananas, and unicorns—as they reach specific star milestones. This positive reinforcement makes practicing math feel like a game rather than a chore.</p>
+    
+    <h3>Features of Math Boss Flashcards</h3>
+    <ul>
+        <li><strong>Multi-Level Difficulty:</strong> Choose from Rookie, Pro, or BOSS mode to match your current learning level.</li>
+        <li><strong>Focused Practice:</strong> Use the "Single Table" mode to master a specific number, such as your 7 or 8 times tables.</li>
+        <li><strong>Comprehensive Mistake Tracking:</strong> Our built-in Mistake Log allows parents and teachers to see exactly which problems a student is struggling with.</li>
+        <li><strong>Emoji Rewards:</strong> From chocolate chip cookies to rocket ships, our rewards rain from the sky to celebrate student success!</li>
+    </ul>
+
+    <h3>How to Improve Math Speed and Accuracy</h3>
+    <p>Consistency is key. By practicing with Math Boss for just 10 minutes a day, students can significantly improve their recall speed. The goal is to move from "calculating" an answer to "recalling" it automatically. Our tool is perfect for classroom warm-ups, homework help, or summer learning to prevent the "summer slide."</p>
+
+    <h3>A Free Educational Resource for Teachers and Parents</h3>
+    <p>Math Boss is a free, web-based educational application. No downloads are required, making it accessible on tablets, Chromebooks, and smartphones. Join thousands of students who have become a Math Boss today!</p>
 </div>
 
 <div id="mistakePage">
